@@ -1,0 +1,209 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0; 
+    padding: 0; 
+    background-image: url('img/login-form-bg.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+}
+
+.main-login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(23, 28, 92, 0.693);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 70px 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.ams-logo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    white-space: nowrap;
+}
+
+.ams-logo h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(16, 21, 93, 0.892);
+    color: rgba(255, 255, 255, 0.892);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    border-radius: 70% 20% 45% 30%;
+    padding: 5px 15px;
+}
+
+.ams-logo .as{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: rgba(16, 21, 93, 0.892);
+}
+
+.ams-logo .as{
+    color: rgba(12, 16, 72, 0.892);
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 45px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(23, 28, 92);
+}
+
+.login-form .login{
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-form .error{
+    padding: 10px;
+    color: white;
+    background-color: rgb(232, 37, 37);
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.login-form .label{
+    text-align: left;
+    width: 100%;
+}
+
+.login-form .label{
+    margin-bottom: 8px;
+}
+
+.text-field {
+    font-size: 16px;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 300px;
+    margin-bottom: 25px;
+  }
+  
+  .text-field::placeholder {
+    color: #a0a0a0;
+  }
+  
+  .text-field:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .login-btn {
+    background-color: rgba(102, 106, 184, 0.583);
+    backdrop-filter: blur(10px);
+    border: none; 
+    color: rgb(255, 255, 255);
+    padding: 14px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder; 
+    margin: 4px 2px; 
+    transition: all ease-in-out 0.1s; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
+}
+
+.login-btn:hover {
+    background-color: rgba(102, 106, 184, 0.327);
+    backdrop-filter: blur(10px);
+}
+
+.forget-pass{
+    text-decoration: none;
+    color: white;
+}
+
+.forget-pass:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    .main-login-form {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 70px 25px;
+        width: 80%;
+        background-color: rgba(23, 28, 92, 0.481);
+        backdrop-filter: blur(10px);
+        justify-content: space-between;
+    }
+    .ams-logo{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .ams-logo h1{
+        font-size: 4rem;
+    }
+
+    .ams-logo .as{
+        font-size: 2rem;
+    }
+    .ams-logo .as{
+        color: rgba(12, 16, 72, 0.892);
+    }
+
+    .text-field {
+        font-size: 13px;
+        padding: 12px 10px;
+        width: 200px;
+        margin-bottom: 15px;
+      }
+
+    .login-form{
+        padding: 15px 35px;
+        margin: 15px 0;
+    }
+
+    .login-form .login{
+        font-size: 25px;
+        padding: 0;
+        margin: 15px 0;
+    }
+
+    .login-btn{
+        padding: 10px 15px;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .login-form .forget-pass{
+        font-size: 13px;
+    }
+}

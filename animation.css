@@ -1,0 +1,178 @@
+
+.main-container .main .classroom-container{
+    animation-name: slideup;
+    animation-duration: .8s;
+}
+
+.main-container .main .ats{
+    animation-name: slidedown, fadeIn;
+    animation-duration: .8s;
+}
+
+.main-container .main .ec{
+    animation-name: slideleft;
+    animation-duration: 1s;
+}
+
+.main-container .main .classroom-container .classroom:hover{
+    transform: scale(1.05);
+}
+
+.main-container .sched-container{
+    animation-name: sched-slidedown,fadeIn;
+    animation-duration: 1s;
+}
+
+.attendance-content{
+    animation-name: grow;
+    animation-duration: .7s;
+}
+
+.classroom-nav li .btn{
+    animation-name: slidedown;
+    animation-duration: 0.7s;
+}
+
+.classroom-nav ul li {
+    animation-name: slidedown;
+    animation-duration: 0.7s;
+}
+/* 
+.atd-record{
+    animation-name: slideleft;
+    animation-duration: .9s;
+}
+
+.attendance-container .student{
+    animation-name: slideleft;
+    animation-duration: .6s;
+}
+
+.atd-record-tbl{
+    animation-name: slideleft;
+    animation-duration: .9s;
+}
+
+.attendance-container .no-search {
+    animation-name: slideleft;
+    animation-duration: 1s;
+}
+
+.tc-main .main-child .attendance-container table{
+    animation-name: slideleft;
+    animation-duration: 1s;
+}
+.tc-main .main-child .attendance-container form{
+    animation-name: slideleft;
+    animation-duration: 1s;
+}
+
+.attendance-container .std-record-tbl{
+    animation-name: slideleft;
+    animation-duration: 1s;
+} */
+
+.sched-main .my-sched-sign{
+    animation-name: slidedown;
+    animation-duration: .5s;
+}
+
+.sched-main table{
+    animation-name: slideleft;
+    animation-duration: 1s;
+}
+
+@keyframes slideright{
+    from{transform: translateX(200%);}
+}
+
+@keyframes sched-slidedown{
+    from{transform: translateY(-10%);}
+}
+
+@keyframes fadeIn{
+    from{opacity: 0;}
+}
+
+@keyframes slideleft{
+    from{transform: translateX(-200%);}
+}
+
+@keyframes slidedown{
+    from{transform: translateY(-200%);}
+}
+@keyframes slideup{
+    from{transform: translateY(300%);}
+}
+
+@keyframes grow{
+    from{transform:scale(0.3)}
+}
+
+@media (max-width: 850px) {
+    .main-container .main .classroom-container{
+        animation-name: none;
+    }
+
+    .main-container .main .classroom-container .classroom:nth-child(even){
+        animation-name: slideright;
+        animation-duration: 1.2s;
+    }
+
+    .main-container .main .classroom-container .classroom:nth-child(odd){
+        animation-name: slideleft;
+        animation-duration: 1.2s;
+    }
+    .main-container .main .ats{
+        animation-name: slidedown, fadeIn;
+        animation-duration: .8s;
+    }
+
+    .main-container .main .ec{
+        animation-name: slidedown;
+        animation-duration: .4s;
+    }
+
+    .main-container .sched-container{
+        animation-name: slideup;
+        animation-duration: .5s;
+    }
+
+    .main-login-form .ams-logo{
+        animation-name: lslidedown;
+        animation-duration: .9s;
+    }
+    
+    .main-login-form .login-form{
+        animation-name: lslideup;
+        animation-duration: .9s;
+    }
+    
+    @keyframes slideright{
+        from{transform: translateX(200%);}
+    }
+
+    @keyframes slideleft{
+        from{transform: translateX(-200%);}
+    }
+
+    @keyframes slidedown{
+        from{transform: translateY(-200%);}
+    }
+    @keyframes slideup{
+        from{transform: translateY(200%);}
+    }
+
+    @keyframes lslidedown{
+        from{transform: translateY(-300%);}
+    }
+    @keyframes lslideup{
+        from{transform: translateY(300%);}
+    }
+
+    @keyframes fadeIn{
+        from{opacity: 0;}
+    }
+
+
+}

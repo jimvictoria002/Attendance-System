@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 235, 235);
+    flex-direction: column;
+}
+
+.sched-main{
+    margin: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-sched-tbl {
+    width: 95%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.my-sched-sign h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px 0;
+    flex: 2;
+}
+.my-sched-sign a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    font-size: larger;
+}
+
+.my-sched-sign a:hover{
+    text-decoration: underline;
+}
+
+.my-sched-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 28, 92);
+    color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 3px rgba(17, 21, 79, 0.7);
+    width: 100%;
+}
+
+.my-sched-tbl table {
+    border-collapse: collapse;
+}
+
+.my-sched-tbl tbody td .sub-code{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+.my-sched-tbl tbody td p{
+    margin: 10px 0;
+}
+
+.my-sched-tbl tbody td {
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+.my-sched-tbl tbody th {
+    background-color: rgb(23, 28, 92);
+    color: #ffffff;
+    padding: 40px 10px;
+    font-size: larger;
+}
+
+.my-sched-tbl tbody th{
+    font-size: 1.2rem;
+}
+
+.my-sched-tbl tbody td {
+    padding: 6px 15px;
+    font-size: 1rem;
+}
+
+.my-sched-tbl tbody tr td{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .my-sched-tbl tbody th{
+        font-size: .9rem;
+    }
+    .my-sched-tbl tbody td{
+        font-size: .8rem;
+    }
+    .my-sched-tbl tbody th,
+    .my-sched-tbl tbody td {
+        padding: 8px;
+    }
+    .my-sched-sign h1{
+        font-size: 1.7rem;
+    }
+
+    .my-sched-sign a{
+        font-size: 1rem;
+    }
+    .my-sched-tbl tbody th{
+        padding: 35px 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .my-sched-tbl tbody th{
+        font-size: .8rem;
+    }
+    .my-sched-tbl tbody td{
+        font-size: .7rem;
+    }
+
+    .my-sched-tbl tbody td{
+        padding: 0 5px;
+    }
+    .my-sched-tbl tbody th{
+        padding: 35px 5px;
+    }
+    .my-sched-sign h1{
+        font-size: 1.2rem;
+    }
+
+    .my-sched-sign a{
+        font-size: .8rem;
+    }
+}

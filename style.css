@@ -1,0 +1,1506 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(219, 216, 216);
+}
+
+/* NAVBARS */
+.nav{
+    width: 100%;
+    background-color: rgb(23, 28, 92);
+    color: rgba(255, 255, 255, 0.852);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.classroom-nav{
+    width: 100%;
+    background-color: rgb(23, 28, 92);
+    color: rgba(255, 255, 255, 0.852);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+}
+
+.classroom-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1%;
+}
+
+.classroom-nav li{
+    list-style-type: none;
+    flex: 3;
+    text-align: center;
+}
+
+.classroom-nav li{
+    display: block;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.classroom-nav li a{
+    text-decoration: none;
+    display: inline;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: all ease-in .2s, border-bottom-color ease-in-out .6s;
+}
+
+.classroom-nav li{
+    transition: all ease-in .2s;
+}
+
+.classroom-nav a{
+    text-decoration: none;
+}
+
+.classroom-nav li a:hover{
+    color: #615e5e;
+}
+
+.classroom-nav li .active{
+    color: #908c8c;
+}
+
+
+/* PROFILE SECTION */
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.user-fullname{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    font-size: 16px;
+    align-items: center;
+    color: #ffffff;
+    transition: all ease .3s;
+}
+
+.user-fullname:hover{
+    color: #b1afaf;
+}
+
+.user-fullname h4{
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+.year-section{
+    margin: 0;
+    font-size: 13px;
+}
+
+.user-avatar{
+    padding: 10px;
+    width: 40px;
+}
+
+.profile-container{
+    flex: 1;
+}
+/* LOGO */
+
+.child-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+.child-logo h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(12, 16, 72, 0.892);
+    color: rgba(255, 255, 255, 0.892);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0,.8);
+    backdrop-filter: blur(10px);
+    border-radius: 70% 20% 45% 30%;
+    padding: 5px 13px;
+    margin: 5px 0;
+    font-weight: bolder;
+}
+
+.logo{
+    flex: 3;
+    display: flex;
+    padding-left: 1%;
+}
+
+
+.logo .child-logo h1{
+    display: inline;
+}
+
+/* DROP DOWN */
+.drop-down{
+    position: absolute;
+    right: 2%;
+    display: inline-block;
+    box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.432),1px -2px 3px rgba(0, 0, 0, 0.432);
+    background-color: #eeeeee;
+    display: none;
+    margin-top: 5px;
+    border-radius: 10px 0 10px 10px;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+
+.drop-down a{
+    display: block;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.818);
+    transition: all ease-in .15s;
+}
+
+.drop-down a:hover{
+    background-color: #bcbcbc;
+}
+
+.drop{
+    cursor: pointer;
+}
+
+
+.logout:hover{
+    color: red;
+}
+
+/* DASHBOARD MAIN CONTAINER */
+.main-container{
+    display: flex;
+}
+
+.main-container > div{
+    padding: 10px;
+    display: block;
+}
+
+/* CHILD MAIN */
+.main{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main .ats{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.986);
+    padding: 20px 5px;
+    background-color: rgb(23, 28, 92);
+    border-radius: 15px;
+    margin: 0;
+}
+
+.ec{
+    margin-left:15px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* CLASSROOMS CONTAINER */
+.main .classroom-container{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3),0 -0.5px 2px rgba(0, 0, 0, 0.3);
+    padding: 0 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/* CLASSROOMS */
+.classroom-container .classroom{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.911);
+    width: calc(25% - 18px); 
+    margin: 25px 5px; 
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15), -1px -1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    font-size: 80%;
+    padding: 15px;
+    transition: background-color, box-shadow 0.4s,0.4s ease;
+}
+
+.classroom-content{
+    display: flex;
+    flex-direction: column;
+}
+.classroom-content h1{
+    flex: 2;
+    padding: 10px 0;
+}
+
+.classroom-content p{
+    flex: 1;
+}
+
+
+.classroom:hover{
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.15);
+    background-color: rgb(248, 244, 244);
+}
+
+.classroom-teacher{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* SCHEDULE CONTAINER */
+.sched-container{
+    border-radius: 20px;
+    width: 100%;
+    margin: 5px;
+    flex: 0;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.15), 1px -1px 3px rgba(0, 0, 0, 0.15);
+    height: 50%;
+}
+
+.start-time{
+    white-space: nowrap;
+}
+
+.end-time{
+    white-space: nowrap;
+}
+
+.sched-container .sched-today{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+/* SCHEDULE TABLE */
+
+.sched-container table{
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.432);
+}
+
+table, th, td{
+    border-collapse: collapse;
+    
+}
+
+.subject-sched th{
+    font-size: 12px;
+    padding: 5px;
+    background-color: #bcbcbc;
+}
+.subject-sched td{
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.subject-sched tr:nth-child(even){
+    background-color: #ccc9c9;
+}
+
+/* TC main-child*/
+
+.tc-main .main-child{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.tc-main .main-child .today-container{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.tc-main .main-child .meet-today{
+    color: rgba(0, 0, 0, 0.825);
+
+}
+
+.tc-main .main-child .attendance-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+.tc-main .main-child .attendance-container form{
+    width: 100%;
+}
+
+.tc-main .main-child .attendance-container form table{
+    width: 100%;
+}
+
+.attendance-content{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.911);
+    width: calc(50% - 18px); 
+    margin: 25px 5px; 
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15), -1px -1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    font-size: 80%;
+    padding: 15px;
+    transition: background-color, box-shadow 0.4s,0.4s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attendance-content > .atd-content{
+    margin-bottom: 10px;
+}
+
+.attendance-content #str-end{
+    white-space: nowrap;
+}
+
+.tc-main .main-child .attendance-container .attendance-content .atd_btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(23, 28, 92);
+    padding: 13px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    width: 40%;
+    transition: ease .5s;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tc-main .main-child .attendance-container .attendance-content .atd_btn:hover{
+    color: rgba(248, 244, 244, 0.746);
+    background-color: rgba(23, 28, 92, 0.903);
+}
+
+.tc-main .main-child .attendance-container .attendance-content:hover{
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.15);
+    
+}
+
+/* TC MAIN-CHILD TABLE*/
+
+
+.attendance-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attendance-container  table{
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.432);
+    font-size: 1.2rem;
+    color: #000000df;
+    width: 100%;
+}
+
+.attendance-container table thead{
+    background-color: rgb(23, 28, 92);
+    color: #ffffff;
+}
+
+.attendance-container table thead th .selector{
+    width: 150px;
+    padding: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    appearance: none;
+    text-align: center;
+    margin-top: 10px;
+    transition: all ease .3s;
+}
+.attendance-container table thead th .selector:hover{
+    background-color: #cfcdcd;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.432);
+}
+
+.attendance-container table thead th .selector::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.attendance-container table thead th .selector option{
+    padding: 10px;
+    background-color: #ffffff;
+    color: #333333;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.attendance-container table thead th .selector option:hover{
+    background-color: #f1f1f1;
+    color: #000000;
+}
+
+.attendance-container  table td{
+    text-align: center;
+    padding: 5px;
+}
+
+.attendance-container  table td input[type='radio']{
+    display: none;
+}
+
+.attendance-container  table td label{
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: all ease .3s;
+    border-radius: 10px;
+}
+
+.attendance-container  table .stat-container .present{
+    color: rgb(18, 153, 18);
+}
+.attendance-container  table .stat-container .present:hover{
+    background-color: rgb(67, 211, 67);
+    color: rgb(255, 255, 255);
+}
+
+.attendance-container  table .stat-container input:checked + .present{
+    background-color: rgb(57, 197, 57);
+    color: rgb(239, 232, 232);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.395);
+}
+
+.attendance-container  table .stat-container .absent{
+    color: rgb(214, 37, 37);
+}
+
+.attendance-container  table .stat-container .absent:hover{
+    background-color: rgba(238, 56, 56, 0.887);
+    color: rgb(255, 255, 255);
+}
+
+.attendance-container table .stat-container input:checked + .absent{
+    background-color: rgba(218, 47, 47, 0.887);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.395);
+}
+
+.attendance-container  table .stat-container .late{
+    color: rgb(183, 127, 21);
+}
+
+.attendance-container  table .stat-container .late:hover{
+    background-color: rgb(241, 181, 69);
+    color: rgb(255, 255, 255);
+}
+
+.attendance-container table .stat-container input:checked + .late{
+    background-color: rgb(218, 162, 58);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.395);
+}
+
+.attendance-container  table .stat-container .excused{
+    color: rgb(13, 165, 189);
+}
+
+.attendance-container  table .stat-container .excused:hover{
+    background-color: rgb(84, 224, 245);
+    color: rgb(255, 255, 255);
+}
+
+.attendance-container  table .stat-container input:checked + .excused{
+    background-color: rgb(66, 199, 220);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.395);
+}
+
+.attendance-container  table .stat-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.attendance-container table th{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.attendance-container table tbody tr{
+    transition: all ease .3s;
+}
+
+.attendance-container table tbody tr:nth-child(even){
+    background-color: #c2c1c1;
+}
+
+.attendance-container table tbody tr:hover{
+    background-color: #aca8a8;
+    color: #ffffff;
+}
+
+.attendance-container .student{
+    width: 100%;
+}
+
+.attendance-container .student table{
+    width: 100%;
+}
+
+.attendance-container .student table td{
+    padding: 20px 10px;
+}
+
+
+/*STUDENT ATTENDANCE TABLE RECORD*/
+
+.attendance-container .std-record-tbl{
+    margin: 20px;
+    width: 90%;
+}
+
+.attendance-container table .th-student{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.attendance-container .Late{
+    background-color: rgb(241, 181, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin: 10px 20px;
+}
+
+.attendance-container .Present{
+    background-color: rgb(67, 211, 67);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin: 10px 20px;
+}
+
+.attendance-container .Absent{
+    background-color: rgba(218, 47, 47, 0.887);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin: 10px 20px;
+}
+
+.attendance-container .Excused{
+    background-color: rgb(84, 224, 245);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin: 10px 20px;
+}
+
+.attendance-container .today-Late{
+    background-color: rgb(241, 181, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 15px 40px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.attendance-container .today-Present{
+    background-color: rgb(67, 211, 67);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 15px 40px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.attendance-container .today-Absent{
+    background-color: rgba(218, 47, 47, 0.887);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 15px 40px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.attendance-container .today-Excused{
+    background-color: rgb(84, 224, 245);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 15px 40px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.attendance-container .not-set{
+    color: rgb(255, 0, 0);
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#no-meet{
+    font-size: 20px;
+}
+
+
+
+/* ATTENDANCE RECORD TABLE*/
+
+
+.atd-record-tbl  table{
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.432);
+    font-size: 1.2rem;
+    color: #000000df;
+    width: 100%;
+}
+
+.atd-record-tbl form{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atd-record-tbl form input[type ='text']{
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 250px;
+    outline: none;
+    margin: 10px 0;
+}
+
+.atd-record-tbl  table .total-thead th{
+    padding: 15px;
+    font-size: 22px;
+}
+
+.atd-record-tbl  table .total-thead .stat{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.atd-record-tbl table tbody td{
+    padding: 20px 0;
+    font-size: 22px;
+}
+
+
+.atd-record-tbl table tbody tr .Late{
+    background-color: inherit;
+    color: rgb(172, 127, 44);
+    border-radius: 15px;
+    padding: 0;
+    display: inline;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.atd-record-tbl table tbody tr .Present{
+    background-color: inherit;
+    color: rgb(42, 149, 42);
+    border-radius: 15px;
+    padding: 0;
+    display: inline;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.atd-record-tbl table tbody tr .Absent{
+    background-color: inherit;
+    color: rgba(146, 25, 25, 0.887);
+    border-radius: 15px;
+    padding: 0;
+    display: inline;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.atd-record-tbl table tbody tr .Excused{
+    background-color: inherit;
+    color: rgb(44, 168, 187);
+    border-radius: 15px;
+    padding: 0;
+    display: inline;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.atd-record-tbl form input[type ='submit']{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-image: url('img/magnifying-glass.png');
+    background-size: 20px; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 10%;
+}
+
+
+.atd-record-tbl form input[type ='submit']:hover{
+    background-color: rgba(207, 204, 204, 0.903)
+}
+
+.attendance-container .search-container{
+    width: 100%;
+}
+
+.attendance-container .search-container form{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attendance-container form input[type ='text']{
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 250px;
+    outline: none;
+    margin: 10px 0;
+}
+
+.attendance-container form .search-view{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-image: url('img/magnifying-glass.png');
+    background-size: 20px; /* Set the size of the background image */
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 10%;
+    transition: all ease .3s;
+    
+}
+
+.attendance-container form .search-view:hover{
+    background-color: rgb(224, 217, 217);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.432);
+}
+
+.attendance-container .no-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.atd-record-tbl table thead{
+    background-color: rgb(23, 28, 92);
+    color: #ffffff;
+}
+
+.atd-record-tbl table td{
+    text-align: center;
+    padding: 5px;
+}
+
+.atd-record-tbl table td input[type='radio']{
+    display: none;
+}
+
+.atd-record-tbl table td label{
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: all ease .3s;
+    border-radius: 10px;
+}
+
+.atd-record-tbl table .stat-container .present{
+    color: rgb(18, 153, 18);
+}
+.atd-record-tbl table .stat-container .present:hover{
+    background-color: rgb(67, 211, 67);
+    color: rgb(255, 255, 255);
+}
+
+.atd-record-tbl table .stat-container input:checked + .present{
+    background-color: rgb(57, 197, 57);
+    color: rgb(239, 232, 232);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.395);
+}
+
+.atd-record-tbl table .stat-container .absent{
+    color: rgb(214, 37, 37);
+}
+
+.atd-record-tbl table .stat-container .absent:hover{
+    background-color: rgba(238, 56, 56, 0.887);
+    color: rgb(255, 255, 255);
+}
+
+.atd-record-tbl table .stat-container input:checked + .absent{
+    background-color: rgba(218, 47, 47, 0.887);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.395);
+}
+
+.atd-record-tbl table .stat-container .late{
+    color: rgb(183, 127, 21);
+}
+
+.atd-record-tbl  table .stat-container .late:hover{
+    background-color: rgb(241, 181, 69);
+    color: rgb(255, 255, 255);
+}
+
+.atd-record-tbl table .stat-container input:checked + .late{
+    background-color: rgb(218, 162, 58);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.395);
+}
+
+.atd-record-tbl  table .stat-container .excused{
+    color: rgb(13, 165, 189);
+}
+
+.atd-record-tbl  table .stat-container .excused:hover{
+    background-color: rgb(84, 224, 245);
+    color: rgb(255, 255, 255);
+}
+
+.atd-record-tbl  table .stat-container input:checked + .excused{
+    background-color: rgb(66, 199, 220);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.395);
+}
+
+.atd-record-tbl  table .stat-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.atd-record-tbl table th{
+    text-align: center;
+    padding: 25px;
+}
+
+
+.atd-record-tbl table tbody tr{
+    transition: all ease .3s;
+}
+
+.atd-record-tbl table tbody tr:nth-child(even){
+    background-color: #c2c1c1;
+}
+
+.atd-record-tbl table tbody tr:hover{
+    background-color: #aca8a8;
+    color: #ffffff;
+}
+
+
+
+/* ATTENDANCE RECORD*/
+
+.atd-record {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.atd-record  table{
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.432);
+    font-size: 1.2rem;
+    color: #000000df;
+    width: 100%;
+}
+.atd-record table thead{
+    background-color: rgb(23, 28, 92);
+    color: #ffffff;
+}
+
+.atd-record table thead th{
+    padding: 10px;
+}
+
+.atd-record  table td{
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.atd-record table tbody tr{
+    transition: all ease .3s;
+    padding: 0 15px;
+}
+
+.atd-record table tbody tr:hover{
+    background-color: #aca8a8;
+    color: #ffffff;
+}
+
+.atd-record table tbody tr:nth-child(even){
+    background-color: #c2bfbf;
+}
+
+.atd-record  table td .atd-btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(23, 28, 92);
+    padding: 13px 40px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    transition: ease .5s;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.atd-record  .atd-btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(23, 28, 92);
+    padding: 16px 30px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    width: 150px;
+    transition: ease .5s;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 15px;
+}
+
+.atd-record  table td .atd-btn:hover{
+    color: rgba(248, 244, 244, 0.746);
+    background-color: rgba(23, 28, 92, 0.903);
+}
+
+.atd-record  .atd-btn:hover{
+    color: rgba(248, 244, 244, 0.746);
+    background-color: rgba(23, 28, 92, 0.903);
+}
+
+
+
+/* STUDENT TABLE */
+
+.tc-main{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.tc-main .students{
+    flex: 0;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.432);
+    padding: 5px;
+    border-radius: 15px;
+    display: inline;
+    height: 50%;
+}
+
+.tc-main .students h2{
+    text-align: center;
+}
+
+.tc-main .students p{
+    text-align: center;
+}
+
+.tc-main .students .std-tbl{
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.tc-main .students .std-tbl thead{
+    background-color: #afaaaa;
+}
+
+.tc-main .students .std-tbl th, td{
+    padding: 15px;
+}
+
+.tc-main .main-child{
+    flex: 3;
+}
+
+.tc-main .students .std-tbl tr:nth-child(even){
+    background-color: #c0bdbd;
+}
+
+.tc-main .students .std-tbl tbody tr{
+    transition: all ease .3s;
+}
+
+.tc-main .students .std-tbl tbody tr:hover{
+    background-color: #9c9a9ab7;
+    color: #ffffff;
+}
+
+
+
+
+.attendance-container #lonely-btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(23, 28, 92);
+    padding: 13px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 25%;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    border-style: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.attendance-container #lonely-btn:hover{
+    color: rgb(226, 223, 223);
+    background-color: rgb(36, 42, 129);
+}
+
+@media (max-width: 850px) {
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-container .main{
+        padding: 30px;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-container .sched-container{
+        flex: 1;
+    }
+    .subject-sched{
+        display: flex;
+        justify-content: center;
+    }
+   
+    .subject-sched table{
+        width: 90%;
+    }
+
+    .main .ats{
+        font-size: 24px;
+        border-radius: 15px;
+        width: 92%;
+        text-align: center;
+
+    }
+    
+    .user-avatar{
+        margin-left: 10px;
+    }
+
+    .user-fullname{
+        font-size: 13px;
+    }
+
+
+    .classroom-container{
+        width: 80%;
+        padding: 0;
+    }
+
+    .classroom-container .classroom{
+        width: calc(35% - 5px); 
+        height: calc(30% - 5px); 
+        margin: 25px 5px; 
+        font-size: .7rem;
+    }
+
+    .classroom-container .classroom .course-code{
+        font-size: calc(250% - 5px);
+    }
+
+    .classroom-teacher{
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    } 
+
+    .tc-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .classroom-nav li a{
+        font-size: 2rem;
+    }
+
+    .stat-container{
+        flex-wrap: wrap;
+    }
+
+    .atd-record-tbl table tbody tr .Late{
+        background-color: inherit;
+        color: rgb(172, 127, 44);
+        border-radius: 15px;
+        padding: 0;
+        display: inline;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+    }
+    
+    .atd-record-tbl table tbody tr .Present{
+        background-color: inherit;
+        color: rgb(42, 149, 42);
+        border-radius: 15px;
+        padding: 0;
+        display: inline;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+    }
+    
+    .atd-record-tbl table tbody tr .Absent{
+        background-color: inherit;
+        color: rgba(146, 25, 25, 0.887);
+        border-radius: 15px;
+        padding: 0;
+        display: inline;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+    }
+    
+    .atd-record-tbl table tbody tr .Excused{
+        background-color: inherit;
+        color: rgb(44, 168, 187);
+        border-radius: 15px;
+        padding: 0;
+        display: inline;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+    }
+
+    .classroom-nav li{
+        padding: 0 5px;
+        margin: 0 5px;
+    }
+
+    
+
+    .attendance-container .student table{
+        font-size: 1rem;
+    }
+
+    .attendance-container .student table tbody td{
+        padding: 10px 20px;
+    }
+
+    .atd-record  .atd-btn{
+        margin-top: 10px;
+        font-size: 15px;
+        width: 50px;
+        padding: 10px 20px;
+    }
+
+    .atd-record table tbody tr:hover{
+        background-color: inherit;
+        color: inherit;
+    }
+
+    .atd-record table tbody tr:nth-child(even):hover{
+        background-color: #c2bfbf;
+        color: inherit;
+    }
+
+    .attendance-container table thead th .selector{
+        width: 110px;
+        padding: 5px 0;
+    }
+
+    .attendance-container table tbody tr:hover{
+        background-color: inherit;
+        color: inherit;
+    }
+    .atd-record-tbl table tbody tr:hover{
+        background-color: inherit;
+        color: inherit;
+    }
+
+    .atd-record-tbl table tbody tr:nth-child(even):hover {
+        background-color: #c2c1c1;
+    }
+
+    .attendance-container table tbody tr:nth-child(even):hover {
+        background-color: #c2c1c1;
+    }
+
+    
+    .logo{
+        flex: 3;
+        display: flex;
+        padding-left: 1%;
+    }
+
+    .child-logo p{
+        font-size: 12px;
+        white-space: nowrap;
+        padding-bottom: 5px;
+    }
+    
+    .child-logo h1{
+        font-size: 35px;
+    }
+
+    .classroom-nav ul{
+        padding-right: 10px;
+    }
+
+    .classroom-nav ul .btn{
+        padding: 0;
+        font-size: 1rem;
+        width: 100%;
+        display: block;
+    }
+
+    .classroom-nav ul .btn{
+        border-bottom-width: 0;
+    }
+
+    .attendance-container table th, .attendance-container table td{
+        padding: 5px;
+        font-size: .8rem;
+    }
+
+
+    .attendance-container table th{
+        padding: 15px 7px;
+        font-size: .8rem;
+    }
+
+    .tc-main .main-child .today-container{
+        font-size: .7rem;
+        padding-bottom: 5px;
+    }
+
+    .tc-main .main-child .attendance-container .attendance-content{
+        font-size: .7rem;
+    }
+
+    .atd-record table thead th{
+        padding: 5px;
+        font-size: .8rem;
+    }
+    
+    .atd-record  table td{
+        text-align: center;
+        padding: 25px 4px;
+        font-size: .7rem;
+    }
+
+    .atd-record  table td .date{
+        white-space: nowrap;
+    }
+
+    .atd-record  table td .atd-btn{
+        font-size: .6rem;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    .atd-record-tbl table td{
+        padding: 5px;
+        font-size: .8rem;
+    }
+
+    .attendance-container #lonely-btn{
+        font-size: 17px;
+    }
+    
+
+    .atd-record-tbl table th{
+        padding: 15px 7px;
+        font-size: .8rem;
+    }
+
+    .tc-main .main-child .attendance-container .attendance-content .atd_btn{
+
+        font-size: .8rem;
+        padding: 8px 0;
+
+    }
+
+    .attendance-container form input[type ='submit']{
+        padding: 7px 12px;
+        font-size: 16px;
+        width: 20%;
+    }
+
+    .attendance-container form input[type ='text']{
+        padding: 7px 12px;
+        font-size: 16px;
+        width: 42%;
+    }
+
+    .atd-record-tbl form input[type ='submit']{
+        padding: 7px 12px;
+        font-size: 16px;
+        width: 20%;
+    }
+
+    .atd-record-tbl  table .total-thead th{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .atd-record-tbl  table .total-thead .stat{
+        font-weight: lighter;
+        font-size: 11px;
+    }
+
+    .atd-record-tbl table tbody td{
+        padding: 25px 0;
+        font-size: 12px;
+    }
+
+    .atd-record-tbl form input[type ='text']{
+        padding: 7px 12px;
+        font-size: 16px;
+        width: 42%;
+    }
+
+    .attendance-container form{
+        flex-direction: row;
+    }
+
+    .attendance-container .std-record-tbl .th-student{
+        padding: 6px;
+    }
+
+    .attendance-container .std-record-tbl tbody td{
+        padding: 0;
+    }
+
+    .attendance-container .std-record-tbl tbody .record-stat-con p{
+        margin: 10px;
+    }
+
+    .attendance-container .std-record-tbl tbody .date{
+        white-space: nowrap;
+    }
+
+    .main-container .main{
+        padding: 20px 0;
+    }
+
+    .main-container .sched-container{
+        padding: 20px 0;
+    }
+
+    .attendance-container .today-Late{
+        padding: 15px 40px;
+        font-size: 1rem;
+    }
+    
+    .attendance-container .today-Present{
+        padding: 15px 40px;
+        font-size: 1rem;
+    }
+    
+    .attendance-container .today-Absent{
+        padding: 15px 40px;
+        font-size: 1rem;
+    }
+    
+    .attendance-container .today-Excused{
+        padding: 15px 40px;
+        font-size: 1rem;
+    }
+
+    #date-tod{
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+
+    #date-tod-tc{
+        white-space: nowrap;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    #no-meet{
+        font-size: 15px;
+    }
+
+    .attendance-content{
+        width: calc(80% - 18px); 
+    }
+}
