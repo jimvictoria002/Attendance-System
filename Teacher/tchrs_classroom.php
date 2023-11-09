@@ -126,7 +126,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- ATTENDANCE TODAY SEARCH VIEW TABLE -->
+                                <!-- AATTENDANCE TODAY SEARCH VIEW TABLE -->
                                 <?php
                                 if(isset($_GET['search'])){
                                     $sql = "SELECT * FROM `std_attendance` INNER JOIN students ON std_attendance.std_id = students.std_id WHERE std_attendance.sched_id = {$_GET['sched_id']} AND std_attendance.sub_id = {$_GET['sub_id']} AND std_attendance.date = '".date("Y-m-d")."' AND (students.lastname LIKE '%{$_GET['search']}%' OR students.firstname LIKE '%{$_GET['search']}%') ORDER BY students.lastname, students.lastname";
