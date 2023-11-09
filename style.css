@@ -1128,6 +1128,10 @@ table, th, td{
     background-color: rgb(36, 42, 129);
 }
 
+/*
+    EDI WOW
+/*
+
 @media (max-width: 850px) {
     .main-container{
         flex-direction: column;
